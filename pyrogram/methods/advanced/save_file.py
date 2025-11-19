@@ -110,7 +110,7 @@ class SaveFile:
                     except Exception as e:
                         log.exception(e)
 
-            part_size = 1024 * 1024
+            part_size =  10 * 1024 * 1024
 
             if isinstance(path, (str, PurePath)):
                 fp = open(path, "rb")
